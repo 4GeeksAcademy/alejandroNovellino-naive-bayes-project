@@ -31,7 +31,7 @@ def show_comparison_table(metric_names: list[str], default_metrics: list[float],
     markdown_table += "|---|---|---|\n"
 
     for i in range(len(metric_names)):
-        markdown_table += f"| {metric_names[i]} | {np.round(default_metrics[i], 2)} | {np.round(optimized_metrics[i], 2)} |\n"
+        markdown_table += f"| {metric_names[i]} | {np.round(default_metrics[i], 3)} | {np.round(optimized_metrics[i], 3)} |\n"
 
     # display the table
     display(Markdown(markdown_table))
